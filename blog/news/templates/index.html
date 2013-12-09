@@ -1,0 +1,7 @@
+<h1>Moja Strona </h1>
+{% for entry in news %}
+    <h3>{{ entry.title }}</h3>
+    {{ entry.Tresc|safe }}<br />
+    {{entry.release_date|date:'D d m Y'}}
+    {{entry.time_date}}
+{% endfor  %}
